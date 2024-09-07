@@ -1,9 +1,11 @@
-package me.alsesn.webapp.models;
+package me.alsesn.webapp.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.Date;
 
+@Data
 @Entity
 @Table(name = "clients")
 public class ClientModel {
