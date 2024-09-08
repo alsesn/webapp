@@ -16,7 +16,7 @@ public class ClientModel {
     private String firstName;
     private String lastName;
 
-    @Column(unique = true, insertable = false)
+    @Column(unique = true)
     private String email;
 
     private String phone;

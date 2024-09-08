@@ -12,11 +12,11 @@
             <div class="col-md-8 mx-auto rounded border p-4">
                 <h2 class="text-center mb-5">New Client</h2>
 
-                <form method="post" th:object="${clientDto}}">
+                <form method="post" th:object="${clientDto}">
                     <div class="row mb-3">
                         <label  class="col-sm-4 col-form-label">First Name</label>
                         <div class="col-sm-8">
-                            <input class="form-control" th:field="${clientDto.firstName}}">
+                            <input class="form-control" th:field="${clientDto.firstName}">
                             <p th:if="${#fields.hasErrors('firstName')}"
                                th:errorclass="text-danger"
                                th:errors="${clientDto.firstName}"></p>
@@ -26,7 +26,7 @@
                     <div class="row mb-3">
                         <label  class="col-sm-4 col-form-label">LastName</label>
                         <div class="col-sm-8">
-                            <input class="form-control" th:field="${clientDto.lastName}}">
+                            <input class="form-control" th:field="${clientDto.lastName}">
                             <p th:if="${#fields.hasErrors('lastName')}"
                                th:errorclass="text-danger"
                                th:errors="${clientDto.lastName}"></p>
@@ -36,7 +36,7 @@
                     <div class="row mb-3">
                         <label  class="col-sm-4 col-form-label">Email</label>
                         <div class="col-sm-8">
-                            <input class="form-control" th:field="${clientDto.email}}">
+                            <input class="form-control" th:field="${clientDto.email}">
                             <p th:if="${#fields.hasErrors('email')}"
                                th:errorclass="text-danger"
                                th:errors="${clientDto.email}"></p>
@@ -46,7 +46,7 @@
                     <div class="row mb-3">
                         <label  class="col-sm-4 col-form-label">Phone</label>
                         <div class="col-sm-8">
-                            <input class="form-control" th:field="${clientDto.phone}}">
+                            <input class="form-control" th:field="${clientDto.phone}">
                             <p th:if="${#fields.hasErrors('phone')}"
                                th:errorclass="text-danger"
                                th:errors="${clientDto.phone}"></p>
@@ -56,7 +56,7 @@
                     <div class="row mb-3">
                         <label  class="col-sm-4 col-form-label">Address</label>
                         <div class="col-sm-8">
-                            <input class="form-control" th:field="${clientDto.address}}">
+                            <input class="form-control" th:field="${clientDto.address}">
                             <p th:if="${#fields.hasErrors('address')}"
                                th:errorclass="text-danger"
                                th:errors="${clientDto.address}"></p>

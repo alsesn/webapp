@@ -22,8 +22,4 @@ public class ClientDto {
 
     @NotEmpty(message = "The Status is required")
     private String status;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 5730b2015a348dfae534b41217979eaec90971fd
