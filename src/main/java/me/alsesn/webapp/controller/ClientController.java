@@ -1,5 +1,6 @@
 package me.alsesn.webapp.controller;
 
+import me.alsesn.webapp.model.ClientDto;
 import me.alsesn.webapp.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -18,6 +19,15 @@ public class ClientController {
     public String getClients(Model model) {
         var clients = repository.findAll(Sort.by(Sort.Direction.DESC, "id"));
         model.addAttribute("clients", clients);
+
         return "clients/index";
+    }
+
+    @GetMapping("/create")
+    public String createClient(Model model) {
+        ClientDto clientDto = new ClientDto();
+        model.addAttribute("clientDto", clientDto);
+
+        return "clients/create";
     }
 }
